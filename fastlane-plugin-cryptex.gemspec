@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'h.januschka@krone.at'
 
   spec.summary       = 'fastlane Crypt Store Git repo'
-  spec.homepage      = "https://github.com/hjanuschka/fastlane-plugin-cryptex"
+  spec.homepage      = "https://github.com/vitalbeats/fastlane-plugin-cryptex.git"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w[bin/cryptex README.md LICENSE]
