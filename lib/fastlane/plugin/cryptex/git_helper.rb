@@ -109,9 +109,6 @@ module Fastlane
 
       # Checks if a specific branch exists in the git repo
       def self.branch_exists?(branch)
-        # THIS is specific to our environment and shouldn't be used for general purposes
-        return true
-
         return unless @dir
 
         result = Dir.chdir(@dir) do
