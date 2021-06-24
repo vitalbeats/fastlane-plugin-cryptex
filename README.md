@@ -1,3 +1,37 @@
+# IMPORTANT NOTE: PAY ATTENTION
+
+This is a fork that adds a fix to avoid the process to hang in the step `origin list` when fastlane runs.
+
+Because the proposed fix (this fork only applies it) hasn't been merged and the fix is important and try to create a different gem just to apply that fix is too cumbersome and unnecessary following steps must be done in VB project to make it work.
+
+## references
+
+- [PR 20](https://github.com/hjanuschka/fastlane-plugin-cryptex/pull/20)
+
+## REQUIREMENT
+
+- ruby 2.6.5 (ruby 2.6.1 in Big Sur has issues with thor when `rake` is executed)
+
+## STEPS before going back to project
+
+Before going back to project and to use the gem created in this step some manual actions must be done.
+
+1. delete any fastlane-plugin-cryptex gem installed
+```
+$> gem uninstall fastlane-plugin-cryptex
+$> bundle remove fastlane-plugin-cryptex
+```
+
+2. execute:
+```
+$> bundle install
+$> rake install
+```
+
+NOW YOU CAN GO BACK TO THE PROJECT KNOWING THE GEM IS INSTALLED
+
+# ==================
+
 # Cryptex for fastlane
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-cryptex)
