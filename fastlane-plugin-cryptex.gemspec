@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fastlane/plugin/cryptex/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'fastlane-plugin-cryptex'
+  spec.name          = 'fastlane-plugin-vbcryptex'
   spec.version       = Fastlane::Cryptex::VERSION
   spec.version = "#{spec.version}-alpha-#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
-  spec.author        = 'Helmut Januschka'
-  spec.email         = 'h.januschka@krone.at'
+  spec.author        = 'Jaime Davila' # 'Helmut Januschka' # please remember this is a fork of Helmut's project to apply a fix needed to keep working
+  spec.email         = 'jaime@diablourbano.com'
 
-  spec.summary       = 'fastlane Crypt Store Git repo'
+  spec.summary       = 'fastlane Crypt Store Git repo fork with fix to avoid list-versions frozen'
   spec.homepage      = "https://github.com/vitalbeats/fastlane-plugin-cryptex.git"
   spec.license       = "MIT"
 
